@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Tools" Version="1.1.0-preview4-final" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Home\Components\Title\Default.cshtml" />
+    <None Remove="Views\Shared\Components\Button\Default.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Home\Components\Title\Default.cshtml" />
+    <EmbeddedResource Include="Views\Shared\Components\Button\Default.cshtml" />
+  </ItemGroup>
+
+</Project>
